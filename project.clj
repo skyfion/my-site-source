@@ -10,6 +10,7 @@
                  [org.clojure/clojurescript "1.10.238"]
                  [org.clojure/core.async  "0.4.474"]
                  [quil "2.7.1"]
+                 [com.taoensso/timbre "4.10.0"]
                  [reagent "0.8.1"]]
 
   :plugins [[lein-figwheel "0.5.16"]
@@ -98,7 +99,7 @@
                    ;; need to add dev source path here to get user.clj loaded
                    :source-paths ["src" "dev"]
                    ;; for CIDER
-                   :plugins [[cider/cider-nrepl "0.12.0"]]
+                  ;; :plugins [[cider/cider-nrepl "0.12.0"]]
                    :repl-options {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}
                    ;; need to add the compliled assets to the :clean-targets
                    :clean-targets ^{:protect false} ["resources/public/js"
